@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo "Build"
 		sh 'mvn package -DskipTests'
+		sh 'docker build -t="dumitrusarov/simple-project:latest" .'
             }
         }
         stage('Deploy') {
