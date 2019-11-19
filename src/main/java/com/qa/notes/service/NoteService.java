@@ -53,12 +53,12 @@ public class NoteService {
 	 * @throws NotFoundException 
 	 * If id is not found in database it will throw the exception
 	 */
-	public NoteDto updateNote(NoteDto noteDto) throws NotFoundException{
-		Note note = noteRepository.findById(noteDto.getId()).orElseThrow(() -> new NotFoundException());
-		note.setText(noteDto.getText());
-		noteRepository.flush();
-		return new NoteDto(note);
-	}
+	// public NoteDto updateNote(NoteDto noteDto) throws NotFoundException{
+	// 	Note note = noteRepository.findById(noteDto.getId()).orElseThrow(() -> new NotFoundException());
+	// 	note.setText(noteDto.getText());
+	// 	noteRepository.flush();
+	// 	return new NoteDto(note);
+	// }
 	
 	/**
 	 * Deletes a note text.
