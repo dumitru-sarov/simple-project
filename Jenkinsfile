@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'mvn test Dtest=ControllerAndServiceSuite'
+                sh 'mvn test -Dtest=ControllerAndServiceSuite'
             }
         }
         stage('Build') {
