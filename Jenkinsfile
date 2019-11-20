@@ -15,9 +15,24 @@ pipeline {
             }
         }
         stage('Deploy') {
-       steps {
-		echo "Deploy"
-   	}
-       }
-   }
+            steps {
+		        echo "Deploy"   	
+            }
+        }
+        stage('Testing Environment') {
+            steps {
+                echo "hello"
+            }
+        }
+        stage('Staging') {
+            steps {
+                echo "hello"
+            }
+        }
+        stage('Production') {
+            steps {
+                echo "hello"
+            }
+        }
+    }
 }
