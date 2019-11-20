@@ -17,7 +17,6 @@ pipeline {
         stage('Deploy') {
        steps {
 		echo "Deploy"
-	 	sh 'docker push dumitrusarov/simple-project:latest' 
    	}
        }
    }
